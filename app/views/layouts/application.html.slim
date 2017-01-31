@@ -1,16 +1,18 @@
 doctype html
 html lang="en" 
   head
+    title = content_for?(:title) ? yield(:title) : 'Admin page'
+    
     meta charset="utf-8" /
     meta content="IE=edge" http-equiv="X-UA-Compatible" /
     meta content="width=device-width, initial-scale=1" name="viewport" /
     meta content="" name="description" /
     meta content="" name="author" /
-    title
-      = content_for?(:title) ? yield(:title) : 'Admin page'
 
     = csrf_meta_tags
-    = stylesheet_link_tag    'admin-manifest', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'admin-manifest', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     = yield
+              
+    = yield(:javascript)

@@ -1,33 +1,28 @@
 doctype html
-html
+html lang="en" 
   head
-    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
     meta content="width=device-width, initial-scale=1" name="viewport" /
+    meta content="" name="description" /
+    meta content="" name="author" /
     title
       = content_for?(:title) ? yield(:title) : 'Admin page'
 
     = csrf_meta_tags
     = stylesheet_link_tag    'admin-manifest', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'admin-manifest', 'data-turbolinks-track': 'reload'
-  body.nav-md
-    div.container.body
-      div.main_container
-        = render 'partials/sidenav'
-        = render 'partials/topnav'
+  body
+    #wrapper
+      nav.navbar.navbar-default.navbar-static-top role="navigation" style=("margin-bottom: 0") 
+        = render 'admin/shared/header'
+        = render 'admin/shared/navigation'
+        
+      #page-wrapper
+        .row
+          .col-lg-12
+            h1.page-header Dashboard
+          /! /.col-lg-12
 
-        .right_col role="main"
-          div
-            .row
-              .col-md-12.col-sm-12.col-xs-12
-                .x_panel style="min-height:600px;"
-                  .x_title
-                    h2
-                      = content_for?(:page_title) ? yield(:page_title) : 'Specify page title!'
-                    .clearfix
-                  .x_content
-                    = yield
-
-        = render 'partials/footer'
+              
   = yield(:javascript)
-
-  = javascript_include_tag 'admin-theme-manifest', 'data-turbolinks-track': true
