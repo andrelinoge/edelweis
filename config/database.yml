@@ -19,5 +19,5 @@ test:
 production:
   <<: *default
   database: edelweis_production
-  username: edelweis
-  password: <%= ENV['EDELWEIS_DATABASE_PASSWORD'] %>
+  username: root
+  password: root

@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 # A B C D E F 
-gem 'any_login'
 gem 'annotate'
 gem 'bootstrap_sb_admin_base_v2'
 gem 'bcrypt', '~> 3.1.7'
@@ -39,6 +38,7 @@ gem 'uglifier', '>= 1.3.0'
 
 
 group :development do
+  gem 'any_login'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
