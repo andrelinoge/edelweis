@@ -39,7 +39,10 @@ gem 'uglifier', '>= 1.3.0'
 
 
 group :development do
+  gem 'capistrano-bundler'
   gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rvm'
   gem 'pry'
   gem 'pry-rails'
   gem 'web-console', '>= 3.3.0'
