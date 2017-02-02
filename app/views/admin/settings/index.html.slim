@@ -1,0 +1,15 @@
+- content_for(:page_header, 'Site settings')
+.table-responsive
+  table.table.table-striped.table-bordered
+    thead
+      tr.row
+        th.col-lg-1 Key
+        th.col-lg-10 Value
+        th.col-lg-1.text-center Action
+    tbody
+    - @settings.each_key do |key|
+      tr.row
+        td.col-lg-1 = key
+        td.col-lg-10 = @settings[key]
+        td.col-lg-1.text-center = link_to 'edit', edit_admin_setting_path(key)
+  

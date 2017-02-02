@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     devise_for :user, only: [:sessions], controllers: {
       sessions: 'admin/sessions'
     }
+
+    resources :settings, only: [:index, :edit]
   end
 
   scope :locale do

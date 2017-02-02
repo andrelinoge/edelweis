@@ -21,8 +21,10 @@ html lang="en"
       #page-wrapper
         .row
           .col-lg-12
-            h1.page-header Dashboard
-          /! /.col-lg-12
+            h1.page-header = content_for?(:page_header) ? yield(:page_header) : 'Dashboard'
+        .row
+          .col-lg-12
+            = yield
 
               
   = yield(:javascript)
