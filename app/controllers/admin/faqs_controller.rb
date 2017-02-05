@@ -45,6 +45,6 @@ class Admin::FaqsController < Admin::ApplicationController
   end
 
   def faq_params
-    params.fetch(:faq, {}).permit(:title, :content)
+    params.fetch(:faq, {}).permit(:title, :content, :faq_category_id)
   end
 end

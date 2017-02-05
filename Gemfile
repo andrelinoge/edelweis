@@ -9,6 +9,7 @@ end
 gem 'activemodel-serializers-xml'
 gem 'annotate'
 gem 'bootstrap_sb_admin_base_v2'
+gem 'bootstrap_notify'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'carrierwave'

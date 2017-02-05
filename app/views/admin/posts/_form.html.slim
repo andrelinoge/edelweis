@@ -1,0 +1,14 @@
+= simple_form_for([:admin, @post]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title, class: 'form-control'
+    = f.input :content, class: 'form-control', as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
+    = f.input :meta_keys, class: 'form-control'
+    = f.input :meta_description, class: 'form-control'
+
+  .form-actions
+    = link_to 'Cancel', admin_posts_path, class: 'btn btn-default'
+    |&nbsp;&nbsp;&nbsp;
+    = f.button :submit, class: 'btn btn-success'
+

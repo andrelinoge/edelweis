@@ -1,0 +1,31 @@
+- content_for(:page_header, 'Post preview')
+
+.row
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        = "#{@post.title}"
+      .panel-body
+        == @post.content
+      .panel-footer
+        = link_to admin_posts_path, class: 'btn btn-default' do
+          span.fa.fa-long-arrow-left &nbsp;Back
+        |&nbsp;
+        = link_to  edit_admin_post_path(@post), class: 'btn btn-primary' do
+          span.fa.fa-edit &nbsp;Edit
+        
+.row
+  .col-lg-16
+    .panel.panel-default
+      .panel-heading
+        | Meta keywords
+      .panel-body
+        = @post.meta_keys
+
+
+  .col-lg-16
+    .panel.panel-default
+      .panel-heading
+        | Meta description
+      .panel-body
+        = @post.meta_description

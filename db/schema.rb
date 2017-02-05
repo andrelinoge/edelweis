@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170205110519) do
+ActiveRecord::Schema.define(version: 20170205180051) do
 
   create_table "ckeditor_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "data_file_name",               null: false
@@ -22,6 +22,22 @@ ActiveRecord::Schema.define(version: 20170205110519) do
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.index ["type"], name: "index_ckeditor_assets_on_type", using: :btree
+  end
+
+  create_table "faq_categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "faq_category_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "faq_category_id", null: false
+    t.string   "locale",          null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "title"
+    t.index ["faq_category_id"], name: "index_faq_category_translations_on_faq_category_id", using: :btree
+    t.index ["locale"], name: "index_faq_category_translations_on_locale", using: :btree
   end
 
   create_table "faq_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -37,9 +53,33 @@ ActiveRecord::Schema.define(version: 20170205110519) do
 
   create_table "faqs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
-    t.text     "content",    limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.text     "content",         limit: 65535
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.integer  "faq_category_id"
+    t.index ["faq_category_id"], name: "index_faqs_on_faq_category_id", using: :btree
+  end
+
+  create_table "post_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "post_id",                        null: false
+    t.string   "locale",                         null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "title"
+    t.text     "content",          limit: 65535
+    t.text     "meta_keys",        limit: 65535
+    t.text     "meta_description", limit: 65535
+    t.index ["locale"], name: "index_post_translations_on_locale", using: :btree
+    t.index ["post_id"], name: "index_post_translations_on_post_id", using: :btree
+  end
+
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "title"
+    t.text     "content",          limit: 65535
+    t.text     "meta_keys",        limit: 65535
+    t.text     "meta_description", limit: 65535
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
   create_table "settings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

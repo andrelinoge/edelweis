@@ -2,6 +2,7 @@
   = f.error_notification
 
   = f.input :title, class: 'form-control'
+  = f.association :faq_category, class: 'form-control', include_blank: 'Category'
   = f.input :content, class: 'form-control', as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
 
   .form-actions

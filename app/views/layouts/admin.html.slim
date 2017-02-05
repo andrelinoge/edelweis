@@ -12,6 +12,7 @@ html lang="en"
     = csrf_meta_tags
     = stylesheet_link_tag    'admin-manifest', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'admin-manifest', 'data-turbolinks-track': 'reload'
+    = render 'admin/shared/notify'
   body
     #wrapper
       nav.navbar.navbar-default.navbar-static-top role="navigation" style=("margin-bottom: 0") 

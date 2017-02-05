@@ -2,9 +2,21 @@
   .sidebar-nav.navbar-collapse
     ul#side-menu.nav
       li
-        a href="#{admin_faqs_path}" 
+        a href="#" 
           i.fa.fa-book.fa-fw
+          span.fa.arrow
           | FAQ
+        ul.nav.nav-second-level.collapse
+          li
+            a href="#{admin_faq_categories_path}" 
+              | Categories
+          li
+            a href="#{admin_faqs_path}" 
+              | FAQ-items
+      li
+        a href="#{admin_posts_path}" 
+          i.fa.fa-book.fa-fw
+          | Posts
       li
         a href="#{admin_users_path}" 
           i.fa.fa-user.fa-fw

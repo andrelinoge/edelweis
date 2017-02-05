@@ -1,0 +1,27 @@
+- content_for(:page_header, 'Listing Posts')
+
+.row
+  .col-lg-12.text-right.vertical-bottom-offset
+    = link_to '+ New item', new_admin_post_path, class: 'btn btn-success'
+
+
+.row
+  col-lg-12
+    .table-responsive
+      table.table.table-striped.table-bordered
+        thead
+          tr.row
+            th.col-lg-1 # ID
+            th.col-lg-9 Title
+            th.col-lg-2
+        tbody
+        - @posts.each do |post|
+          tr.row
+            td.col-lg-1 = post.id
+            td.col-lg-9 = post.title
+            td.col-lg-2.text-right
+              = link_to 'Show', admin_post_path(post), class: 'btn btn-default'
+              |&nbsp;
+              = link_to 'Edit', edit_admin_post_path(post), class: 'btn btn-primary'
+              |&nbsp;
+              = link_to 'Destroy', admin_post_path(post), data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger'

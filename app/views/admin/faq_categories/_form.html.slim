@@ -1,0 +1,9 @@
+= simple_form_for([:admin, @faq_category]) do |f|
+  = f.error_notification
+
+  = f.input :title, class: 'form-control'
+
+  .form-actions
+    = link_to 'Cancel', admin_faq_categories_path, class: 'btn btn-default'
+    |&nbsp;&nbsp;&nbsp;
+    = f.button :submit, class: 'btn btn-success'

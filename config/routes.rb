@@ -13,6 +13,8 @@ Rails.application.routes.draw do
       resources :settings, only: [:index, :edit]
       resources :users
       resources :faqs
+      resources :faq_categories
+      resources :posts
     end
   end 
 
