@@ -12,6 +12,8 @@ module Edelweis
       config.generators do |g|
         g.test_framework  false
         g.jbuilder        false
+        g.helper          false
+        g.assets          false
       end
     end 
   end

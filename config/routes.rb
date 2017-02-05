@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     }
 
     resources :settings, only: [:index, :edit]
+    resources :users
   end
 
   scope :locale do

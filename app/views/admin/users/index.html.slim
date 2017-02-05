@@ -1,0 +1,30 @@
+- content_for(:page_header, 'Listing users')
+
+.row
+  .col-lg-12.text-right.vertical-bottom-offset
+    = link_to '+ New User', new_admin_user_path, class: 'btn btn-success'
+
+
+.row
+  col-lg-12
+    .table-responsive
+      table.table.table-striped.table-bordered
+        thead
+          tr.row
+            th.col-lg-1 #ID
+            th.col-lg-2 Email
+            th.col-lg-2 Last sign in ip
+            th.col-lg-5 Last sign in at
+            th.col-lg-2
+        tbody
+        - @users.each do |user|
+          tr.row
+            td.col-lg-1 = user.id
+            td.col-lg-2 = user.email
+            td.col-lg-2 = user.last_sign_in_ip
+            td.col-lg-3 = l user.last_sign_in_at, format: :long
+            td.col-lg-2.text-right
+              = link_to 'Edit', edit_admin_user_path(user), class: 'btn btn-primary'
+              |&nbsp;
+              = link_to 'Destroy', admin_user_path(user), data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger'
+    

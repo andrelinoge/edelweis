@@ -1,0 +1,11 @@
+= simple_form_for([:admin, @user]) do |f|
+  = f.error_notification
+
+  = f.input :email, class: 'form-control'
+  = f.input :password, class: 'form-control', value: ''
+  = f.input :password_confirmation, class: 'form-control', value: ''
+
+  .form-actions
+    = link_to 'Cancel', admin_users_path, class: 'btn btn-default'
+    |&nbsp;&nbsp;&nbsp;
+    = f.button :submit, class: 'btn btn-success'
