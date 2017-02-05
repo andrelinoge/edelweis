@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # A B C D E F 
+gem 'activemodel-serializers-xml'
 gem 'annotate'
 gem 'bootstrap_sb_admin_base_v2'
 gem 'bcrypt', '~> 3.1.7'
@@ -18,6 +19,7 @@ gem 'devise'
 gem 'faker'
 gem 'font-awesome-rails'
 # G H I J K L 
+gem 'globalize', github: 'globalize/globalize'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'kaminari'
