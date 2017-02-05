@@ -9,6 +9,16 @@
 ul.nav.navbar-top-links.navbar-right
   li.dropdown
     a.dropdown-toggle data-toggle="dropdown" href="#" 
+      = I18n.locale.to_s.capitalize
+      |&nbsp;
+      i.fa.fa-caret-down
+    ul.dropdown-menu.dropdown-user
+      - locales_except_current.each do |l|
+        = link_to url_for(action: params[:action], controller: params[:controller], locale: l) do
+          span ="#{l.to_s.capitalize}"
+      
+  li.dropdown
+    a.dropdown-toggle data-toggle="dropdown" href="#" 
       i.fa.fa-user.fa-fw
       i.fa.fa-caret-down
     ul.dropdown-menu.dropdown-user

@@ -1,0 +1,10 @@
+= simple_form_for([:admin, @faq]) do |f|
+  = f.error_notification
+
+  = f.input :title, class: 'form-control'
+  = f.input :content, class: 'form-control', as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
+
+  .form-actions
+    = link_to 'Cancel', admin_faqs_path, class: 'btn btn-default'
+    |&nbsp;&nbsp;&nbsp;
+    = f.button :submit, class: 'btn btn-success'

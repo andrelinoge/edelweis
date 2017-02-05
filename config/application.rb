@@ -6,7 +6,9 @@ Bundler.require(*Rails.groups)
 
 module Edelweis
   class Application < Rails::Application
-    I18n.available_locales = [:en, :ru]
+    I18n.available_locales     = [:en, :ru, :pt, :it, :de]
+    config.i18n.default_locale = :ru
+    config.i18n.fallbacks      = [:en]
 
     Rails.application.configure do
       config.generators do |g|

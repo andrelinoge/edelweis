@@ -1,0 +1,16 @@
+- content_for(:page_header, 'FAQ preview')
+
+.row
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        = @faq.title
+      .panel-body
+        == @faq.content
+      .panel-footer
+        = link_to admin_faqs_path, class: 'btn btn-default' do
+          span.fa.fa-long-arrow-left &nbsp;Back
+        |&nbsp;
+        = link_to  edit_admin_faq_path(@faq), class: 'btn btn-primary' do
+          span.fa.fa-edit &nbsp;Edit
+        
