@@ -18,6 +18,6 @@ test:
 
 production:
   <<: *default
-  database: edelweis_production
+  database: edelweis_development
   username: root
   password: root

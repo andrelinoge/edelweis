@@ -45,6 +45,6 @@ class Admin::PostsController < Admin::ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :content, :meta_keys, :meta_description)
+    params.require(:post).permit(:title, :content, :meta_keys, :meta_description, :cover)
   end
 end

@@ -1,5 +1,12 @@
 - content_for(:page_header, 'Post preview')
 
+- if @post.cover.present?
+  .row
+    .col-lg-4
+      .well
+        h4 Cover Image
+        = image_tag @post.cover_url, width: '200px', height: '200px'
+
 .row
   .col-lg-12
     .panel.panel-default
@@ -15,7 +22,7 @@
           span.fa.fa-edit &nbsp;Edit
         
 .row
-  .col-lg-16
+  .col-lg-6
     .panel.panel-default
       .panel-heading
         | Meta keywords
@@ -23,7 +30,7 @@
         = @post.meta_keys
 
 
-  .col-lg-16
+  .col-lg-6
     .panel.panel-default
       .panel-heading
         | Meta description
