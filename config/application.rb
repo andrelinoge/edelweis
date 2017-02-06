@@ -8,9 +8,9 @@ module Edelweis
   class Application < Rails::Application
     config.time_zone = 'Europe/Minsk'
     
-    I18n.available_locales     = [:en, :ru, :pt, :it, :de]
+    I18n.available_locales     = [:en, :ru, :pt, :it, :de, :tr]
     config.i18n.default_locale = :ru
-    config.i18n.fallbacks      = [:en]
+    config.i18n.fallbacks      = [:ru, :en]
 
     Rails.application.configure do
       config.generators do |g|
