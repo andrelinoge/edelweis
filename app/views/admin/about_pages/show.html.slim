@@ -1,0 +1,31 @@
+- content_for(:page_header, 'About page preview')
+
+- if @about_page.image.present?
+  .row
+    .col-lg-6
+      .panel.panel-default
+        .panel-heading
+          | Image 
+        .panel-body
+          = image_tag @about_page.image_url
+    .col-lg-6
+      .panel.panel-default
+        .panel-heading
+          | Image description
+        .panel-body
+          = @about_page.image_description
+
+.row
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        = "#{@about_page.title}"
+      .panel-body
+        == @about_page.content
+      .panel-footer
+        = link_to admin_about_pages_path, class: 'btn btn-default' do
+          span.fa.fa-long-arrow-left &nbsp;Back
+        |&nbsp;
+        = link_to  edit_admin_about_page_path(@about_page), class: 'btn btn-primary' do
+          span.fa.fa-edit &nbsp;Edit
+        

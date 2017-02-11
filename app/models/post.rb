@@ -2,10 +2,11 @@
 #
 # Table name: posts
 #
-#  id         :integer          not null, primary key
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  cover      :string(255)
+#  id           :integer          not null, primary key
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  cover        :string(255)
+#  published_at :date
 #
 
 class Post < ApplicationRecord

@@ -1,0 +1,18 @@
+= simple_form_for [:admin, @about_page],  html: {multipart: true} do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title, class: 'form-control'
+    = f.input :content, class: 'form-control', as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
+    = f.input :image_description, class: 'form-control'
+
+    .form-group
+      = image_tag @about_page.image_url, width: '200px', height: '200px' if @about_page.image?
+      = f.file_field :image
+      = f.hidden_field :image_cache 
+
+  .form-actions
+    = link_to 'Cancel', admin_about_pages_path, class: 'btn btn-default'
+    |&nbsp;&nbsp;&nbsp;
+    = f.button :submit, class: 'btn btn-success'
+

@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170211102711) do
+ActiveRecord::Schema.define(version: 20170211110737) do
+
+  create_table "about_page_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "about_page_id",                   null: false
+    t.string   "locale",                          null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "title"
+    t.text     "content",           limit: 65535
+    t.string   "image_description"
+    t.index ["about_page_id"], name: "index_about_page_translations_on_about_page_id", using: :btree
+    t.index ["locale"], name: "index_about_page_translations_on_locale", using: :btree
+  end
+
+  create_table "about_pages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "title"
+    t.text     "content",           limit: 65535
+    t.string   "image"
+    t.string   "image_description"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
 
   create_table "ckeditor_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "data_file_name",               null: false

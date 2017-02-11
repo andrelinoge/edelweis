@@ -16,6 +16,7 @@ Rails.application.routes.draw do
       resources :faq_categories
       resources :posts
       resources :info_blocks, only: [:index, :edit, :update, :show]
+      resources :about_pages
     end
   end 
 
