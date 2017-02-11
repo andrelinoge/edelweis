@@ -6,6 +6,7 @@
     = f.input :content, class: 'form-control', as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
     = f.input :meta_keys, class: 'form-control'
     = f.input :meta_description, class: 'form-control'
+    = f.input :published_at, class: 'form-control'
 
     .form-group
       = image_tag @post.cover_url, width: '200px', height: '200px' if @post.cover?

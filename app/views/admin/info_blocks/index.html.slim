@@ -1,0 +1,23 @@
+- content_for(:page_header, 'Listing Info blocks')
+
+.row
+  col-lg-12
+    .table-responsive
+      table.table.table-striped.table-bordered
+        thead
+          tr.row
+            th.col-lg-1 # ID
+            th.col-lg-2 Section
+            th.col-lg-7 Title
+            th.col-lg-2
+        tbody
+        - @info_blocks.each do |info_block|
+          tr.row
+            td.col-lg-1 = info_block.id
+            td.col-lg-2 = info_block.section
+            td.col-lg-7 = info_block.title
+            td.col-lg-2.text-right
+              = link_to 'Show', admin_info_block_path(info_block), class: 'btn btn-default'
+              |&nbsp;
+              = link_to 'Edit', edit_admin_info_block_path(info_block), class: 'btn btn-primary'
+              

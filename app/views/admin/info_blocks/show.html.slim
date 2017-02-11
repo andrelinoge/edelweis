@@ -1,0 +1,22 @@
+- content_for(:page_header, 'Info block preview')
+
+- if @info_block.image.present?
+  .row
+    .col-lg-4
+      .well
+        h4 Cover Image
+        = image_tag @info_block.image_url, width: '200px', height: '200px'
+
+.row
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        = "#{@info_block.section}: #{@info_block.title}"
+      .panel-body
+        == @info_block.content
+      .panel-footer
+        = link_to admin_info_blocks_path, class: 'btn btn-default' do
+          span.fa.fa-long-arrow-left &nbsp;Back
+        |&nbsp;
+        = link_to  edit_admin_info_block_path(@info_block), class: 'btn btn-primary' do
+          span.fa.fa-edit &nbsp;Edit

@@ -1,0 +1,17 @@
+= simple_form_for [:admin, @info_block],  html: {multipart: true} do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title, class: 'form-control'
+    = f.input :content, class: 'form-control', as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
+
+    .form-group
+      = image_tag @info_block.image_url, width: '200px', height: '200px' if @info_block.image?
+      = f.file_field :image
+      = f.hidden_field :image_cache 
+
+  .form-actions
+    = link_to 'Cancel', admin_info_blocks_path, class: 'btn btn-default'
+    |&nbsp;&nbsp;&nbsp;
+    = f.button :submit, class: 'btn btn-success'
+

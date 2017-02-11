@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206115625) do
+ActiveRecord::Schema.define(version: 20170211102711) do
 
   create_table "ckeditor_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "data_file_name",               null: false
@@ -60,6 +60,26 @@ ActiveRecord::Schema.define(version: 20170206115625) do
     t.index ["faq_category_id"], name: "index_faqs_on_faq_category_id", using: :btree
   end
 
+  create_table "info_block_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "info_block_id",               null: false
+    t.string   "locale",                      null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "title"
+    t.text     "content",       limit: 65535
+    t.index ["info_block_id"], name: "index_info_block_translations_on_info_block_id", using: :btree
+    t.index ["locale"], name: "index_info_block_translations_on_locale", using: :btree
+  end
+
+  create_table "info_blocks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "section"
+    t.string   "title"
+    t.text     "content",    limit: 65535
+    t.string   "image"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "post_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "post_id",                        null: false
     t.string   "locale",                         null: false
@@ -81,6 +101,7 @@ ActiveRecord::Schema.define(version: 20170206115625) do
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
     t.string   "cover"
+    t.date     "published_at"
   end
 
   create_table "settings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
