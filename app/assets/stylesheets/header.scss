@@ -1,0 +1,71 @@
+#header {
+  background: #fff;
+  padding: 15px 0;
+
+  .phone {
+    padding-top: 10px;
+
+    a {
+      color: #000;
+    }
+  }
+
+  .authorize-lang-switcher {
+    font-size: 16px;
+    height: 44px;
+    line-height: 60px;
+    padding: 0 17px;
+
+    #lang-switcher {
+      display: inline-block;
+    }
+
+    #lang-switcher:hover .lang-btn {
+      border-radius: 0 4px 0 0;
+    }
+
+    ul.lang-options {
+      display: none;
+      position: absolute;
+      right: 63px;
+      top: 100%;
+      width: 52px;
+      z-index: 300;
+      background: #009bde none repeat scroll 0 0;
+      color: #fff;
+      list-style: none;
+      font-size: 16px;
+      padding: 0px;
+      margin-top: 6px;
+
+      li {
+        line-height: 30px;
+        text-align: center;
+
+        a {
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+    }
+
+    .auth-btn, .lang-btn {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 16px;
+    }
+
+    .auth-btn {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .lang-btn {
+      border-radius: 0 4px 4px 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

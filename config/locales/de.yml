@@ -1,4 +1,7 @@
 de:
+  btn:
+    sign_in_up: Sign in / Sign up
+# ---------------------------------------
   activerecord:
     errors:
       messages:

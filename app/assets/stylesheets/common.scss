@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v5/yrzXiAvgeQQdopyG8QSg8Q.woff) format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v5/g46X4VH_KHOWAAa-HpnGPhsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Sans Italic'), local('PTSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v5/7dSh6BcuqDLzS2qAASIeuj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v5/lILlYDvubYemzYzN7GbLkIraN7vELC11_xip9Rz-hMs.woff) format('woff');
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.green-bg, .green-btn {
+  background: #8ac200 none repeat scroll 0 0;
+  color: #fff;
+}
+
+.green-btn:hover {
+  background: #6f9c00 none repeat scroll 0 0;
+  transition: all 0.2s ease-in-out 0s;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blue-bg, .blue-btn {
+  background: #009bde none repeat scroll 0 0;
+  color: #fff;
+}
+
+.blue-btn:hover {
+  background: #0083bb none repeat scroll 0 0;
+  transition: all 0.2s ease-in-out 0s;
+  color: #fff;
+  cursor: pointer;
+}
+
+.light-green {
+  color: #b4ffa3 !important;
+}
+
+.light-blue {
+  color: #a4e4ff !important;
+}
+
+.small-logo {
+  display: inline-block;
+  width: 114px;
+  height: 64px;
+  background-image: url('sprite.png');
+  background-position: -761px -128px;
+}

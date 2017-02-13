@@ -1,0 +1,29 @@
+.container
+  .header.clearfix
+    .row
+      .col-lg-3
+        .small-logo
+      .col-lg-3.phone
+        p
+          a href="tel:4930200042089" +49 (302) 000-420-89
+        p
+          a href="tel:380672016555" +380 (67) 201-65-55
+      .col-lg-3
+      .col-lg-3
+        .authorize-lang-switcher
+          a.auth-btn.green-btn = t('btn.sign_in_up')
+          #lang-switcher
+            a.lang-btn.blue-btn
+              span = I18n.locale.to_s.upcase
+            ul.lang-options id='lang-options'
+              li.blue-btn 
+                a href="#" EN
+              li.blue-btn 
+                a href="#" DE
+              li.blue-btn 
+                a href="#" TR
+              li.blue-btn 
+                a href="#" IT
+              li.blue-btn 
+                a href="#" PT
+  

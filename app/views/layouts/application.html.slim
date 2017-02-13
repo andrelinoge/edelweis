@@ -1,7 +1,7 @@
 doctype html
 html lang="en" 
   head
-    title = content_for?(:title) ? yield(:title) : 'Admin page'
+    title = content_for?(:title) ? yield(:title) : 'Edelweiss5'
     
     meta charset="utf-8" /
     meta content="IE=edge" http-equiv="X-UA-Compatible" /
@@ -12,7 +12,19 @@ html lang="en"
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
   body
-    = yield
+    #header
+      = render 'shared/header'
+      
+    #navigation
+      = render 'shared/navigation'
+
+    #content
+      = yield
+
+    footer.footer
+      .container        
+        = render 'shared/footer'
               
     = yield(:javascript)

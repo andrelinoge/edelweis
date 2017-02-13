@@ -1,7 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap_notify";
+@import "font-awesome";
+@import "unslider/unslider";
 
-/*
- *= require font-awesome
- */
+@import "common";
+@import "header";
+@import "navigation";
+@import "content";
+@import "footer";

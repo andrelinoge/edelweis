@@ -1,5 +1,22 @@
 ---
 en:
+  btn:
+    sign_in_up: Sign in / Sign up
+  nav:
+    about_company: About company
+    new: News 
+    contacts: Contacts
+    partners: Partners
+    faq: FAQ
+    privacy_policy: Privacy policy
+    company-rules: Company rules
+    homepage: Homepage
+    investors: Investors
+    about: About
+    partners: Partners
+    guarantees: Guarantees
+
+# ---------------------------------------
   activerecord:
     errors:
       messages:
