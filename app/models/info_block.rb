@@ -14,4 +14,8 @@ class InfoBlock < ApplicationRecord
 
   mount_uploader :image, ImageUploader
   translates :title, :content
+
+  def self.[](section)
+    self.where(section: section).first
+  end
 end

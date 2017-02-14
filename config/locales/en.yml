@@ -2,9 +2,11 @@
 en:
   btn:
     sign_in_up: Sign in / Sign up
+    start_to_invest: Start to invest in electricity
+    all_promotions: View all promotions
   nav:
     about_company: About company
-    new: News 
+    new: News
     contacts: Contacts
     partners: Partners
     faq: FAQ
@@ -15,7 +17,9 @@ en:
     about: About
     partners: Partners
     guarantees: Guarantees
-
+  text:
+    silder_bottom: Using of alternative energy technologies already passed the frames of compromise solutions in the area of electricity generating. It is enough to say that amount of electricity produced by the wind turbines in 2016 in the world, exceeded amount of electricity produced by atomic stations in the same time frame around the world.
+    super_promotion: First super promotion in New Year!
 # ---------------------------------------
   activerecord:
     errors:
@@ -112,7 +116,7 @@ en:
         other: "%{count} months"
       x_years:
         one: 1 year
-        other: "%{count} years"  
+        other: "%{count} years"
       x_seconds:
         one: 1 second
         other: "%{count} seconds"

@@ -3,4 +3,46 @@
   height: 674px;
   width: 100%;
   z-index: 100;
+
+  .slider-top {
+    padding: 30px 0;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: 100;
+
+    h3 {
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+
+  .slider-bottom {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+
+    .text {
+      font-size: 14px;
+      line-height: 19px;
+      color: #fff;
+    }
+  }
+
+  .start-to-invest {
+    margin-top: 25px;
+  }
+}
+
+#welcome_page {
+  section.about {
+    background: rgba(0, 0, 0, 0) url("wave-bg.jpg") repeat scroll 0 0;
+    color: #777;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

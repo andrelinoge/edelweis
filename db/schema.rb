@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170211110737) do
+ActiveRecord::Schema.define(version: 20170214103055) do
 
   create_table "about_page_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "about_page_id",                   null: false
@@ -95,10 +95,11 @@ ActiveRecord::Schema.define(version: 20170211110737) do
   create_table "info_blocks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "section"
     t.string   "title"
-    t.text     "content",    limit: 65535
+    t.text     "content",           limit: 65535
     t.string   "image"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "image_description"
   end
 
   create_table "post_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

@@ -66,3 +66,17 @@ body {
   background-image: url('sprite.png');
   background-position: -761px -128px;
 }
+
+.large-logo {
+  display: inline-block;
+  background-image: url('sprite.png');
+  background-position: -524px -393px;
+  height: 132px;
+  width: 224px;
+}
+
+.btn {
+  line-height: 40px;
+  padding: 0 16px;
+  font-size: 16px;
+}

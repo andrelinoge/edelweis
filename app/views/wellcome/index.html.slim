@@ -2,10 +2,38 @@
   ul
     li = image_tag 'slide1.jpg'
     li = image_tag 'slide2.jpg'
+  .slider-top
+    .container
+      .row
+        .col-lg-12.text-center
+          h3 =t('text.super_promotion')
+          a.btn.green-btn.start-to-invest href="#" = t('btn.all_promotions')
 
+  .slider-bottom
+    .container
+      .row
+        .col-lg-3
+          .large-logo
+
+        .col-lg-8
+          p.text =t ('text.silder_bottom')
+          a.btn.green-btn.start-to-invest href="#" = t('btn.start_to_invest')
 .clearfix
 
-.container
-  .row
-    .col-lg-12
-      Для того, чтобы продемонстрировать работу приложения, нам частенько приходится заставлять его работать с выдуманными данными, ведь негоже, чтобы заголовки были пустыми, а таблицы лишь расчерченными, но не заполненными.
+#welcome_page
+  section.about
+    .container
+      .row
+        .col-lg-12
+          h2 = @about.title
+        .col-lg-12.convert-links-to-buttons
+          == @about.content
+
+  section.sales
+    .container
+      .row
+        .col-lg-12
+          h2 1111
+        .col-lg-12.convert-links-to-buttons
+          2222
+

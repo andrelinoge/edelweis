@@ -26,6 +26,6 @@ class Admin::InfoBlocksController < Admin::ApplicationController
   end
 
   def info_block_params
-    params.require(:info_block).permit(:title, :content, :image)
+    params.require(:info_block).permit(:title, :content, :image, :image_description)
   end
 end

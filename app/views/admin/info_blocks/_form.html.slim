@@ -7,8 +7,9 @@
 
     .form-group
       = image_tag @info_block.image_url, width: '200px', height: '200px' if @info_block.image?
+      = f.input :image_description, class: 'form-control'
       = f.file_field :image
-      = f.hidden_field :image_cache 
+      = f.hidden_field :image_cache
 
   .form-actions
     = link_to 'Cancel', admin_info_blocks_path, class: 'btn btn-default'

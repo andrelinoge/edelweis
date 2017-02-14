@@ -18,5 +18,7 @@ $(function() {
     nav: false
   });
 
+  $('.convert-links-to-buttons').find('a').addClass('btn green-btn');
+
 });
 
