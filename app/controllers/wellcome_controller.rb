@@ -1,5 +1,8 @@
 class WellcomeController < ApplicationController
   def index
-    @about = InfoBlock[:about]
+    @about_block             = InfoBlock[:about]
+    @sales_block             = InfoBlock[:sales]
+    @wind_technologies_block = InfoBlock[:wind_technologies]
+    @sun_technologies_block  = InfoBlock[:sun_technologies]
   end
 end

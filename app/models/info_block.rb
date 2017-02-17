@@ -10,10 +10,10 @@
 #
 
 class InfoBlock < ApplicationRecord
-  enum section: [ :about, :sales, :technologies, :investment ]
+  enum section: [ :about, :sales, :wind_technologies, :sun_technologies, :investment ]
 
   mount_uploader :image, ImageUploader
-  translates :title, :content
+  translates :title, :content, :image_description
 
   def self.[](section)
     self.where(section: section).first

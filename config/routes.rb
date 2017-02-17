@@ -18,6 +18,9 @@ Rails.application.routes.draw do
       resources :info_blocks, only: [:index, :edit, :update, :show]
       resources :about_pages
     end
+
+    get '/faq', to: 'pages#faq', as: :faq
+    get '/about', to: 'pages#about', as: :about
   end 
 
   devise_for :users

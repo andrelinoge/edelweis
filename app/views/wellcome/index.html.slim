@@ -21,19 +21,51 @@
 .clearfix
 
 #welcome_page
-  section.about
+  section.about.convert-links-to-buttons.add-ref-to-links
+    .container
+      - if @about_block.image.present?
+        .row
+          .col-lg-8
+            .row
+              .col-lg-12
+                h1 = @about_block.title
+              .col-lg-12
+                == @about_block.content
+          .col-lg-4
+            .row
+              .col-lg-12
+                |&nbsp;
+            .row.green-bg.certificate
+              .col-lg-12
+                h3 == @about_block.image_description
+              .col-lg-12.text-center
+                = image_tag @about_block.image.url
+      - else
+        .row
+          .col-lg-12
+            h2 = @about_block.title
+          .col-lg-12
+            == @about_block.content
+
+  section.sales.convert-links-to-buttons.add-ref-to-links
     .container
       .row
-        .col-lg-12
-          h2 = @about.title
-        .col-lg-12.convert-links-to-buttons
-          == @about.content
+        - if @sales_block.image.present?
+          .col-lg-4
+            = image_tag @sales_block.image.url, width: '380px'
+          .col-lg-8
+            .row
+              .col-lg-12
+                h1 = @sales_block.title
+              .col-lg-12.convert-links-to-buttons.text
+                == @sales_block.content
+        - else
+          .col-lg-12
+            h1 = @sales_block.title
+          .col-lg-12.convert-links-to-buttons
+            == @sales_block.contnt
 
-  section.sales
+  .technology
     .container
       .row
-        .col-lg-12
-          h2 1111
-        .col-lg-12.convert-links-to-buttons
-          2222
-
+        

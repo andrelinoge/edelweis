@@ -44,5 +44,84 @@
     color: #777;
     font-size: 14px;
     line-height: 19px;
+
+    .certificate {
+      h3 {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-top: 15px;
+      }
+
+      img {
+        margin: 20px 0 30px 0;
+      }
+    }
+  }
+
+  section.sales {
+    .text {
+      background: hsla(0, 0%, 97%, 0.9) none repeat scroll 0 0;
+      margin-bottom: 35px;
+      padding: 25px 30px 30px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  section.technology {
+
+  }
+
+  section.about, section.sales, section.technology {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1 {
+      font-weight: 500;
+      line-height: 1.1;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#about_page {
+  background: rgba(0, 0, 0, 0) url("wave-bg.jpg") repeat scroll 0 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 19px;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+    font-weight: 400;
+  }
+
+  .text, p {
+    margin-top: 20px;
+  }
+
+  .about-slide {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    td {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .img-description {
+      display: block;
+      font-size: 24px;
+      color: #fff;
+      width: 350px;
+      text-align: left;
+      margin-left: 70px;
+    }
   }
 }

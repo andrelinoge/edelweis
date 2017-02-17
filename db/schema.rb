@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170214103055) do
+ActiveRecord::Schema.define(version: 20170216202414) do
 
   create_table "about_page_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "about_page_id",                   null: false
@@ -82,12 +82,13 @@ ActiveRecord::Schema.define(version: 20170214103055) do
   end
 
   create_table "info_block_translations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "info_block_id",               null: false
-    t.string   "locale",                      null: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.integer  "info_block_id",                   null: false
+    t.string   "locale",                          null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.string   "title"
-    t.text     "content",       limit: 65535
+    t.text     "content",           limit: 65535
+    t.string   "image_description"
     t.index ["info_block_id"], name: "index_info_block_translations_on_info_block_id", using: :btree
     t.index ["locale"], name: "index_info_block_translations_on_locale", using: :btree
   end

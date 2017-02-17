@@ -16,14 +16,9 @@
             a.lang-btn.blue-btn
               span = I18n.locale.to_s.upcase
             ul.lang-options id='lang-options'
-              li.blue-btn 
-                a href="#" EN
-              li.blue-btn 
-                a href="#" DE
-              li.blue-btn 
-                a href="#" TR
-              li.blue-btn 
-                a href="#" IT
-              li.blue-btn 
-                a href="#" PT
+              - locales_except_current.each do |locale|
+                li.blue-btn 
+                  = link_to locale.upcase, url_for(action: params[:action], controller: params[:controller], locale: locale)
+                
+              
   
