@@ -21,8 +21,8 @@ $(function() {
   $('.convert-links-to-buttons').find('a').addClass('btn green-btn');
 
   $('.add-ref-to-links').find('a').each(function(_i, el) {
-    let $el = $(el);
-    $el.attr('href', $el.attr('href') + `?ref=${window.ref_param}`);
+    let link = el;
+    link.attr('href', link.attr('href') + `?ref=${window.ref_param}`);
   });
 
 
