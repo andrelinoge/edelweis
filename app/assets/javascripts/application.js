@@ -22,7 +22,7 @@ $(function() {
 
   $('.add-ref-to-links').find('a').each(function(_i, el) {
     var link = el;
-    link.attr('href', link.attr('href') + `?ref=${window.ref_param}`);
+    link.attr('href', link.attr('href') + "?ref="+window.ref_param);
   });
 
 
