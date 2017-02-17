@@ -31,6 +31,7 @@
                 h1 = @about_block.title
               .col-lg-12
                 == @about_block.content
+                = link_to t('btn.full_about'), about_path, class: 'green-btn'
           .col-lg-4
             .row
               .col-lg-12
@@ -63,9 +64,10 @@
           .col-lg-12
             h1 = @sales_block.title
           .col-lg-12.convert-links-to-buttons
-            == @sales_block.contnt
+            == @sales_block.content
 
   .technology
     .container
       .row
-        
+        .col-lg-12
+          h2 = t('text.technologies')

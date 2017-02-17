@@ -2,19 +2,19 @@
   .header.clearfix
     nav
       ul.nav.nav-pills.
-        li.active 
-          a href="#"  = t('homepage')
-        li 
+        li[class="#{active_menu?(:welcome)}"]
+          = link_to t('homepage'), root_path
+        li
           a href="#"  = t('investors')
-        li 
+        li[class="#{active_menu?(:about)}"]
           = link_to t('about'), about_path
-        li 
+        li
           a href="#"  = t('partners')
-        li 
+        li[class="#{active_menu?(:faq)}"]
           = link_to t('faq'), faq_path
-        li 
+        li
           a href="#"  = t('guarantees')
-        li 
+        li
           a href="#"  = t('news')
-        li 
+        li
           a href="#"  = t('contacts')

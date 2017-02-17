@@ -19,9 +19,9 @@ Rails.application.routes.draw do
       resources :about_pages
     end
 
-    get '/faq', to: 'pages#faq', as: :faq
-    get '/about', to: 'pages#about', as: :about
-  end 
+    get '/faq', to: 'faq#index', as: :faq
+    get '/about', to: 'about#index', as: :about
+  end
 
   devise_for :users
 end

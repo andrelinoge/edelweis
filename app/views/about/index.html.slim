@@ -1,0 +1,20 @@
+#about_page
+  .container
+    - @page_parts.each do |part|
+      .row
+        .col-lg-12
+          h2 = part.title
+      - if part.image.present?
+        .row
+          .col-lg-12
+            table.about-slide
+              tr
+                td.img
+                  = image_tag part.image.url
+                td.green-bg
+                  .img-description
+                    h3 = part.image_description
+
+      .row
+        .col-lg-12.text
+          == part.content
