@@ -66,8 +66,79 @@
           .col-lg-12.convert-links-to-buttons
             == @sales_block.content
 
-  .technology
+  section.technology
     .container
       .row
         .col-lg-12
           h2 = t('text.technologies')
+
+      .row
+        .col-lg-4
+          .tech-tabs
+            #wind.tech-tab.active
+              .wind-icon
+              .tech-title
+                = t('text.wind_turbines')
+                span = t('text.vertical_and_horizontal')
+            #sun.tech-tab
+              .sun-icon
+              .tech-title
+                = t('text.sun_and_powerwall')
+                span = t('text.single_and_cascades_batteries')
+          .tech-image
+            .wind
+              = image_tag @wind_technologies_block.image.url
+            .sun
+              = image_tag @sun_technologies_block.image.url
+
+        .col-lg-8
+          .wind.wind-content
+            .row
+              .col-lg-12
+                h4 = @wind_technologies_block.title
+            .row
+              .col-lg-12
+                == @wind_technologies_block.content
+          .sun.sun-content
+            .row
+              .col-lg-12
+                h4 = @sun_technologies_block.title
+            .row
+              .col-lg-12
+                == @sun_technologies_block.content
+
+  section.investment
+    .container
+      .row
+        .col-lg-12
+          h2 = @investment_block.title
+
+    .container.green-bg
+      .row
+        .col-lg-8.plan
+          h3 =t('text.invets_plan')
+          p 
+            = "#{t('investment.percent')}:"
+            span Под процент прибыли на текущий день от 0.5% до 3%
+          p
+            = "#{t('investment.period')}:"
+            span 365 дней
+          p
+            = "#{t('investment.accruals')}:"
+            span Ежедневно
+          p
+            = "#{t('investment.minima_deposite')}:"
+            span 50 USD
+          p 
+            = "#{t('investment.minimum_conclusion')}:"
+            span 0.2 USD
+          p
+            = "#{t('investment.close_deposit')}:"
+            span не предусмотрено
+          p
+            = "#{t('investment.contract_offer')}:"
+            span после создания депозита и подтверждения данных
+
+          .text == strip_tags(@investment_block.content)
+
+        .col-lg-3

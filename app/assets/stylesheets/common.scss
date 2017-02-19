@@ -32,6 +32,10 @@ body {
   color: #fff;
 }
 
+.grey-bg {
+  background: hsla(0, 0%, 97%, 0.9) none repeat scroll 0 0;
+}
+
 .green-btn:hover {
   background: #6f9c00 none repeat scroll 0 0;
   transition: all 0.2s ease-in-out 0s;

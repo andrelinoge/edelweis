@@ -21,10 +21,23 @@ $(function() {
   $('.convert-links-to-buttons').find('a').addClass('btn green-btn');
 
   $('.add-ref-to-links').find('a').each(function(_i, el) {
-    var link = el;
+    var link = $(el);
     link.attr('href', link.attr('href') + "?ref="+window.ref_param);
   });
 
+  $('#wind').click(function() {
+    $('#sun').removeClass('active');
+    $('#wind').addClass('active');
+    $('.sun').hide();
+    $('.wind').show();
+  });
+
+  $('#sun').click(function() {
+    $('#wind').removeClass('active');
+    $('#sun').addClass('active');
+    $('.wind').hide();
+    $('.sun').show();
+  });
 
 });
 

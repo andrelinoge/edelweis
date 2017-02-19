@@ -22,6 +22,19 @@ ru:
     super_promotion: Первая супер акция в Новом году!
     technologies: Технологии
     faq: Вопросы и ответы
+    wind_turbines: Ветрогенераторы
+    vertical_and_horizontal: Вертикальные и горизонтальные 
+    sun_and_powerwall: Солнце и PowerWall
+    single_and_cascades_batteries: Одиночные и каскады батарей
+    invest_plan: Единый инвестиционный план
+  investment:
+    percent: Процент
+    period: Период
+    accruals: Начисления
+    minima_deposite: Минимальный депозит
+    minimum_conclusion: Минимальный вывод
+    close_deposit: Досрочное закрытие депозита
+    contract_offer: Договор-оферта
 
 # ---------------------------------------
   activerecord:

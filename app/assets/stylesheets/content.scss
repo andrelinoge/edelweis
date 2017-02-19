@@ -73,10 +73,111 @@
   }
 
   section.technology {
+    .tech-tab {
+      display: flex;
+      align-items: center;
+      background: hsla(0, 0%, 97%, 0.9) none repeat scroll 0 0;
+      padding: 20px;
+      cursor: pointer;
 
+      &:hover {
+        color: #fff;
+        background: #8ac200 none repeat scroll 0 0;
+      }
+    }
+
+    .active {
+      color: #fff;
+      background: #8ac200 none repeat scroll 0 0;
+    }
+
+    .wind-content, .sun-content {
+      padding: 25px 30px 30px;
+      background: hsla(0, 0%, 97%, .9);
+      z-index: 2;
+      position: relative;
+      margin-bottom: 35px;
+    }
+
+    .wind {
+      display: block;
+    }
+
+    .sun {
+      display: none;
+    }
+
+    .wind-icon, .sun-icon {
+      background-image: url('sprite.png');
+      width: 70px;
+      height: 70px;
+    }
+
+    .wind-icon {
+      background-position: -761px -192px;
+    }
+
+    .sun-icon {
+      background-position: -761px -262px;
+    }
+
+    .tech-image {
+      margin-top: 20px;
+    }
+
+    .tech-title {
+      font-size: 17px;
+      margin-left: 5px;
+
+      span {
+        display: block;
+        font-size: 15px;
+      }
+    }
   }
 
-  section.about, section.sales, section.technology {
+  section.investment {
+    background: rgba(0, 0, 0, 0) url("investment-bg.jpg") repeat scroll 0 0;
+
+    h2 {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    .plan {
+      padding: 30px;
+      position: relative;
+      
+      h3, span {
+        color: #fff;
+      }
+
+      h3 {
+        font-size: 24px;
+        margin: 15px 0;
+      }
+
+      p {
+        line-height: 30px;
+        color: #4e690c;
+
+        span {
+          color: #fff;
+          font-size: 15px;
+          margin-left: 5px;
+        }
+      }
+
+      .text {
+        color: #777;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  section.about, section.sales, section.technology, section.investment {
     padding-top: 30px;
     padding-bottom: 30px;
 

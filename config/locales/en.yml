@@ -22,6 +22,19 @@ en:
     super_promotion: First super promotion in New Year!
     technologies: Technologies
     faq: Faq
+    wind_turbines: Wind turbines
+    vertical_and_horizontal: Vertical and horizontal
+    sun_and_powerwall: Sun and PowerWall
+    single_and_cascades_batteries: Single and cascades batteries
+    invest_plan: A single investment plan
+  investment:
+    percent: Percent
+    period: Period
+    accruals: Accruals
+    minima_deposite: Минимальный депозит
+    minimum_conclusion: Minimum conclusion
+    close_deposit: Premature closure of deposit
+    contract_offer: Contract-offer
 # ---------------------------------------
   activerecord:
     errors:
