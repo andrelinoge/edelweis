@@ -1,5 +1,5 @@
 class FaqController < ApplicationController
   def index
-    @items = Faq.includes(:faq_category).all
+    @categories = FaqCategory.includes(:faqs).ordered.all
   end
 end

@@ -16,4 +16,6 @@ class Faq < ApplicationRecord
   validates :faq_category, presence: true
   validates :title, presence: true
   validates :content, presence: true
+
+  scope :ordered, -> { order(id: :desc) }
 end

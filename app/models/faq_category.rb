@@ -12,4 +12,6 @@ class FaqCategory < ApplicationRecord
 
   has_many :faqs
   validates :title, presence: true
+
+  scope :ordered, -> { order(id: :desc) }
 end

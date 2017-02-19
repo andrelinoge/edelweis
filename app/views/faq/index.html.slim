@@ -1,0 +1,23 @@
+#faq_page
+  .faq-header
+    .container
+      .row
+        h2 =t('text.faq')
+        
+  .container
+    - @categories.each do |category|
+      .row.faq-category
+        .col-lg-12
+          h2 = category.title
+      
+        .col-lg-10.offset-kg-2
+          - category.faqs.ordered.each do |faq|
+            .row
+              .col-lg-12
+                a.question href="#faq_#{faq.id}" data-toggle="collapse" aria-expanded="false" aria-controls="faq_#{faq.id}"
+                  = faq.title
+
+            .row.collapse[id="faq_#{faq.id}"]
+              .col-lg-9.offset-lg-3
+                .text
+                  == faq.content
