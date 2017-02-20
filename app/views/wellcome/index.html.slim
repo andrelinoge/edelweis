@@ -140,5 +140,7 @@
             span после создания депозита и подтверждения данных
 
           .text == strip_tags(@investment_block.content)
+          .graph
+            = image_tag @investment_block.image.url
 
         .col-lg-3
