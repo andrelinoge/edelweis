@@ -5,6 +5,7 @@ ru:
     start_to_invest: Начните зарабатывать на энергии
     all_promotions: Посмотреть все акции
     full_about: Подробнее о Компании
+    invest: Инвестировать
   nav:
     about_company: О компании
     new: Новости
@@ -27,6 +28,8 @@ ru:
     sun_and_powerwall: Солнце и PowerWall
     single_and_cascades_batteries: Одиночные и каскады батарей
     invest_plan: Единый инвестиционный план
+    at: на
+    income_percent: Процент прибыли
   investment:
     percent: Процент
     period: Период

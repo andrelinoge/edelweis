@@ -182,6 +182,69 @@
         top: 20px;
       }
     }
+
+    .calc {
+      background: rgba(0, 0, 0, 0) url("calc-bg.jpg") repeat scroll 0 0;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      h3 {
+        font-size: 24px;
+        color: #fff;
+      }
+
+      span {
+        font-size: 15px;
+        color: #fff;
+        display: block;
+      }
+
+      .graph-block {
+        background: rgba(0, 0, 0, 0) url("graph-bg.png") repeat scroll 0 0;
+        margin: 40px 0 40px;
+        position: relative;
+        width: 265px;
+        height: 140px;
+
+        .per {
+          font-size: 21px;
+          color: #fff;
+          position: absolute;
+          right: 80px;
+          top: 103px;
+        }
+      }
+
+      input {
+        border: 1px solid #4e690c;
+        font-size: 19px;
+        margin-top: 18px;
+        padding: 8px 0;
+        background: transparent;
+        width: 100%;
+        border-radius: 4px;
+        color: #fff;
+        text-align: center;
+        font-family: PT Sans, sans-serif;
+      }
+
+      .rate {
+        color: #405700;
+        margin-top: 30px;
+        display: inline-block;
+        color: #333;
+        vertical-align: middle;
+        font-size: 15px;
+      }
+
+      .profit {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        margin: 20px 0;
+      }
+    }
   }
 
   section.about, section.sales, section.technology, section.investment {

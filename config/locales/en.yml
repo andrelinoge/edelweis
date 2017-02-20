@@ -5,6 +5,7 @@ en:
     start_to_invest: Start to invest in electricity
     all_promotions: View all promotions
     full_about: Read full story
+    invest: Invest
   nav:
     about_company: About company
     new: News
@@ -27,6 +28,8 @@ en:
     sun_and_powerwall: Sun and PowerWall
     single_and_cascades_batteries: Single and cascades batteries
     invest_plan: A single investment plan
+    at: at
+    income_percent: Percentage of profit
   investment:
     percent: Percent
     period: Period
@@ -35,6 +38,7 @@ en:
     minimum_conclusion: Minimum conclusion
     close_deposit: Premature closure of deposit
     contract_offer: Contract-offer
+
 # ---------------------------------------
   activerecord:
     errors:
