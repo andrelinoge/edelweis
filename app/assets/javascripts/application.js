@@ -6,8 +6,7 @@
 $(function() {
   $('#lang-switcher').mouseenter(function() {
     $('#lang-options').show();
-  })
-  .mouseleave(function() {
+  }).mouseleave(function() {
     $('#lang-options').hide();
   });
 
@@ -22,7 +21,7 @@ $(function() {
 
   $('.add-ref-to-links').find('a').each(function(_i, el) {
     var link = $(el);
-    link.attr('href', link.attr('href') + "?ref="+window.ref_param);
+    link.attr('href', link.attr('href') + "?ref=" + window.ref_param);
   });
 
   $('#wind').click(function() {
@@ -39,5 +38,9 @@ $(function() {
     $('.sun').show();
   });
 
+  $('#calc_input').keyup(function() {
+    var value = $(this).val();
+    $('#profit_result').html(Math.round(314 * value) / 100);
+  });
 });
 
