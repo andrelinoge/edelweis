@@ -3,8 +3,8 @@
     p.light-green
       span Edelweiss5
     p 
-      a href="#" = t('nav.about_company')
-      a href="#" = t('nav.new')
+      a href="#{about_path}" = t('nav.about_company')
+      a href="#{news_index_path}" = t('nav.new')
       a href="#" = t('nav.contacts')
     p.light-green +49 (302) 000-420-89 (Germany)
     p.light-green 
@@ -15,11 +15,11 @@
     .small-logo.footer-logo
   .col-lg-4
     p.light-blue 
-      span Clients
+      span = t('text.clients')
     p 
       a href="#" = t('nav.contacts') 
       a href="#" = t('nav.partners')
-      a href="#" = t('nav.faq')
+      a href="#{about_path}" = t('nav.faq')
     p
      a href="#" = t('nav.privacy_policy')
      a href="#" = t('nav.company-rules')

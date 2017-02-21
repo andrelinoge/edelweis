@@ -8,7 +8,7 @@ en:
     invest: Invest
   nav:
     about_company: About company
-    new: News
+    news: News
     contacts: Contacts
     partners: Partners
     faq: FAQ
@@ -30,6 +30,7 @@ en:
     invest_plan: A single investment plan
     at: at
     income_percent: Percentage of profit
+    clients: Clients
   investment:
     percent: Percent
     period: Period

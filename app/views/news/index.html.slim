@@ -1,0 +1,26 @@
+#news
+  section.header
+    .container
+      .row
+        h2 =t('nav.news')
+
+  section.wave-bg
+    .container
+      - @posts.each do |post|
+        .row.post-row
+          .col-lg-3
+            .image-block
+              = image_tag post.cover.url
+              - if post.published_at.present?
+                span = l post.published_at, format: :long
+              - else
+                span = l DateTime.now, format: :long
+
+          .col-lg-9
+            h3 = post.title
+            .text
+              == post.content
+    
+    .row
+      .col-lg-12.text-center
+        = paginate @posts, first: false, last: false

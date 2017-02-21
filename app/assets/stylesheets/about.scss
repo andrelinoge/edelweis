@@ -1,0 +1,52 @@
+#about_page {
+  background: rgba(0, 0, 0, 0) url("wave-bg.jpg") repeat scroll 0 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 19px;
+
+  .about-header {
+    background: url("about_header_bg.jpg") no-repeat 50%;
+    background-size: cover;
+    height: 250px;
+
+    h2 {
+      color: #fff;
+      font-size: 48px;
+      padding: 90px 0 0;
+    }
+  }
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+    font-weight: 400;
+  }
+
+  .text, p {
+    margin-top: 20px;
+  }
+
+  .about-slide {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    td {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .img-description {
+      display: block;
+      font-size: 24px;
+      color: #fff;
+      width: 350px;
+      text-align: left;
+      margin-left: 70px;
+    }
+  }
+}

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  root 'wellcome#index'
 
   scope '(:locale)', local: /[a-z_\-]{2,6}}/i do
     namespace :admin do
@@ -19,8 +18,11 @@ Rails.application.routes.draw do
       resources :about_pages
     end
 
+    root 'wellcome#index'
     get '/faq', to: 'faq#index', as: :faq
     get '/about', to: 'about#index', as: :about
+
+    resources :news, only: [:index]
   end
 
   devise_for :users

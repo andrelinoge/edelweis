@@ -8,7 +8,7 @@ ru:
     invest: Инвестировать
   nav:
     about_company: О компании
-    new: Новости
+    news: Новости
     contacts: Контакты
     partners: Партнерам
     faq: FAQ
@@ -30,6 +30,7 @@ ru:
     invest_plan: Единый инвестиционный план
     at: на
     income_percent: Процент прибыли
+    clients: Клиенты
   investment:
     percent: Процент
     period: Период

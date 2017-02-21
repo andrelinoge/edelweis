@@ -3,18 +3,18 @@
     nav
       ul.nav.nav-pills.
         li[class="#{active_menu?(:welcome)}"]
-          = link_to t('homepage'), root_path
+          = link_to t('nav.homepage'), root_path
         li
-          a href="#"  = t('investors')
+          a href="#"  = t('nav.investors')
         li[class="#{active_menu?(:about)}"]
-          = link_to t('about'), about_path
+          = link_to t('nav.about'), about_path
         li
-          a href="#"  = t('partners')
+          a href="#"  = t('nav.partners')
         li[class="#{active_menu?(:faq)}"]
-          = link_to t('faq'), faq_path
+          = link_to t('nav.faq'), faq_path
         li
-          a href="#"  = t('guarantees')
+          a href="#"  = t('nav.guarantees')
+        li[class="#{active_menu?(:news)}"]
+          = link_to t('nav.news'), news_index_path
         li
-          a href="#"  = t('news')
-        li
-          a href="#"  = t('contacts')
+          a href="#"  = t('nav.contacts')
