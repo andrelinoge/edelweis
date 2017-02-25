@@ -1,7 +1,44 @@
 ---
 pt:
   btn:
-    sign_in_up: Sign in / Sign up
+    sign_in_up:
+    start_to_invest:
+    all_promotions:
+    full_about:
+    invest:
+  nav:
+    about_company:
+    news:
+    contacts:
+    partners:
+    faq: 
+    privacy_policy:
+    company-rules:
+    homepage:
+    investors:
+    about:
+    guarantees:
+  text:
+    silder_bottom:
+    super_promotion:
+    technologies:
+    faq:
+    wind_turbines:
+    vertical_and_horizontal:
+    sun_and_powerwall:
+    single_and_cascades_batteries:
+    invest_plan:
+    at:
+    income_percent:
+    clients:
+  investment:
+    percent:
+    period:
+    accruals:
+    minima_deposite:
+    minimum_conclusion:
+    close_deposit:
+    contract_offer:
 # ---------------------------------------
   activerecord:
     errors:
