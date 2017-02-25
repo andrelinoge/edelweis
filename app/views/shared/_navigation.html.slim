@@ -6,21 +6,21 @@
           = link_to t('nav.homepage'), root_path, class: 'capitalize'
 
         li
-          a class='capitalize' href="#"  = t('nav.investors')
+          a class='capitalize' href="#{Setting[:investors_link]}"  = t('nav.investors')
 
         li[class="#{active_menu?(:about)}"]
           = link_to t('nav.about'), about_path, class: 'capitalize'
 
         li
-          a href="#" class='capitalize' = t('nav.partners')
+          a href="#{Setting[:partners_link]}" class='capitalize' = t('nav.partners')
 
         li[class="#{active_menu?(:faq)}"]
           = link_to t('nav.faq'), faq_path, class: 'capitalize'
         li
-          a class='capitalize' href="#"  = t('nav.guarantees')
+          a class='capitalize' href="#{Setting[:warranty_link]}"  = t('nav.guarantees')
 
         li[class="#{active_menu?(:news)}"]
           = link_to t('nav.news'), news_index_path, class: 'capitalize'
 
         li
-          a class='capitalize' href="#"  = t('nav.contacts')
+          a class='capitalize' href="#{Setting[:contacts_link]}"  = t('nav.contacts')

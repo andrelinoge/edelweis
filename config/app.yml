@@ -1,7 +1,13 @@
 # config/app.yml for rails-settings-cached
 defaults: &defaults
-  foo: "Foo"
-  bar: 123
+  ref: 12760
+  invest_link: "https://edelweiss5.com/auth?ref=12760"
+  company_rules_link: "https://edelweiss5.com/rules?ref=12760"
+  privacy_policy_link: "https://edelweiss5.com/policy?ref=12760"
+  partners_link: "https://edelweiss5.com/partners?ref=12760"
+  contacts_link: "https://edelweiss5.com/contacts?ref=12760"
+  warranty_link: "https://edelweiss5.com/warranty?ref=12760"
+  investors_link: "https://edelweiss5.com/investors?ref=12760"
 
 development:
   <<: *defaults

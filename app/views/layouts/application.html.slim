@@ -11,7 +11,7 @@ html lang="en"
     = favicon_link_tag 'favicon.ico'
 
     javascript:
-      window.ref_param = 'XXXX';
+      window.ref_param = "#{Setting[:ref]}";
 
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
