@@ -147,7 +147,7 @@
           h3 =t('text.income_percent')
           span = "#{t('text.at')} #{l DateTime.now, format: :long}"
           .graph-block
-            .per 1 %
+            .per = "#{Setting[:profit_percent]} %"
 
           span Инвестируете:
           input[id="calc_input", value="50.00"] 
