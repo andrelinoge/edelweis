@@ -15,10 +15,12 @@
   }
 
   .authorize-lang-switcher {
+    position: relative;
     font-size: 16px;
     height: 44px;
     line-height: 60px;
     padding: 0 17px;
+    width: 400px;
 
     #lang-switcher {
       display: inline-block;
@@ -31,9 +33,9 @@
     ul.lang-options {
       display: none;
       position: absolute;
-      right: 42px;
+      //right: 11px;
       top: 100%;
-      width: 52px;
+      width: 50px;
       z-index: 300;
       background: #009bde none repeat scroll 0 0;
       color: #fff;
@@ -62,9 +64,13 @@
 
     .auth-btn {
       border-radius: 4px 0 0 4px;
+      width: 200px;
+      text-align: center;
     }
 
     .lang-btn {
+      width: 50px;
+      text-align: center;
       border-radius: 0 4px 4px 0;
     }
 
