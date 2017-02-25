@@ -7,7 +7,7 @@
       .row
         .col-lg-12.text-center
           h3 =t('text.super_promotion')
-          a.btn.green-btn.start-to-invest href="#" = t('btn.all_promotions')
+          a.btn.green-btn.start-to-invest href="#{Setting[:shares_link]}" = t('btn.all_promotions')
 
   .slider-bottom
     .container
@@ -17,7 +17,7 @@
 
         .col-lg-8
           p.text =t ('text.silder_bottom')
-          a.btn.green-btn.start-to-invest href="#" = t('btn.start_to_invest')
+          a.btn.green-btn.start-to-invest href="#{Setting[:invest_link]}" = t('btn.start_to_invest')
 .clearfix
 
 #welcome_page

@@ -8,6 +8,7 @@ defaults: &defaults
   contacts_link: "https://edelweiss5.com/contacts?ref=12760"
   warranty_link: "https://edelweiss5.com/warranty?ref=12760"
   investors_link: "https://edelweiss5.com/investors?ref=12760"
+  shares_link: "https://edelweiss5.com/shares?ref=12760"
 
 development:
   <<: *defaults
