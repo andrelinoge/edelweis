@@ -21,6 +21,7 @@ gem 'faker'
 gem 'font-awesome-rails'
 # G H I J K L 
 gem 'globalize', github: 'globalize/globalize'
+gem 'i18n-tasks', '~> 0.9.12'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'kaminari'
