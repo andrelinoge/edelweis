@@ -12,6 +12,11 @@
       = image_tag @post.cover_url, width: '200px', height: '200px' if @post.cover?
       = f.file_field :cover
       = f.hidden_field :cover_cache 
+      br
+      label
+        |Remove image
+        |&nbsp;&nbsp;
+        = f.check_box :remove_cover
 
   .form-actions
     = link_to 'Cancel', admin_posts_path, class: 'btn btn-default'

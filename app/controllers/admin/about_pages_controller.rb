@@ -45,6 +45,6 @@ class Admin::AboutPagesController < Admin::ApplicationController
   end
 
   def about_page_params
-    params.require(:about_page).permit(:title, :content, :image, :image_description)
+    params.require(:about_page).permit(:title, :content, :image, :image_description, :remove_image)
   end
 end

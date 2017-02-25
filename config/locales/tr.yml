@@ -1,44 +1,44 @@
 ---
 tr:
   btn:
-    sign_in_up:
-    start_to_invest:
-    all_promotions:
-    full_about:
-    invest:
+    sign_in_up: Oturum aç / Kaydol
+    start_to_invest: Elektrik enerjisine yatırım yapmaya başlayın
+    all_promotions: Tüm promosyonları görüntüle
+    full_about: Hikayeyi oku
+    invest: Invest
   nav:
-    about_company:
-    news:
-    contacts:
-    partners:
-    faq: 
-    privacy_policy:
-    company-rules:
-    homepage:
-    investors:
-    about:
-    guarantees:
+    about_company: Şirket hakkında
+    news: Haberler
+    contacts: Kişiler
+    partners: Ortaklar
+    faq: SSS
+    privacy_policy: Gizlilik politikası
+    company-rules: Şirket kuralları
+    homepage: Ana Sayfa
+    investors: Yatırımcılar
+    about: Hakkında
+    guarantees: Teminatlar
   text:
-    silder_bottom:
-    super_promotion:
-    technologies:
-    faq:
-    wind_turbines:
-    vertical_and_horizontal:
-    sun_and_powerwall:
-    single_and_cascades_batteries:
-    invest_plan:
-    at:
-    income_percent:
-    clients:
+    silder_bottom: Alternatif enerji teknolojilerinin kullanımı zaten elektrik üretme alanında uzlaşma çözümleri çerçevesini geçti. Dünya'da 2016'da rüzgar türbinleri tarafından üretilen elektrik miktarının, aynı zaman aralığında atom istasyonları tarafından üretilen elektrik miktarını aştığını söylemek yeterlidir.
+    super_promotion: Yılbaşında ilk süper promosyon!
+    technologies: Teknolojiler
+    faq: Faq
+    wind_turbines: Rüzgar türbini
+    vertical_and_horizontal: Dikey ve yatay
+    sun_and_powerwall: Güneş ve PowerWall
+    single_and_cascades_batteries: Tekli ve basamaklı piller
+    invest_plan: Tek bir yatırım planı
+    at: de
+    income_percent: Kârın yüzdesi
+    clients: Müşteriler
   investment:
-    percent:
-    period:
-    accruals:
-    minima_deposite:
-    minimum_conclusion:
-    close_deposit:
-    contract_offer:
+    percent: Yüzde
+    period: Dönem
+    accruals: Tahakkuklar
+    minima_deposite: Minimum depozito
+    minimum_conclusion: Minimum sonuç
+    close_deposit: Mevduatın erken kapanması
+    contract_offer: Sözleşme teklifi
 # ---------------------------------------    
   activerecord:
     errors:

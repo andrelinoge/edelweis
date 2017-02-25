@@ -1,44 +1,44 @@
 ---
 pt:
   btn:
-    sign_in_up:
-    start_to_invest:
-    all_promotions:
-    full_about:
-    invest:
+    sign_in_up: Entrar / Registrar-se
+    start_to_invest: Comece a investir em eletricidade
+    all_promotions: Ver todas as promoções
+    full_about: Leia todo o artigo
+    invest: Investir
   nav:
-    about_company:
-    news:
-    contacts:
-    partners:
-    faq: 
-    privacy_policy:
-    company-rules:
-    homepage:
-    investors:
-    about:
-    guarantees:
+    about_company: Sobre a empresa
+    news: Notícias
+    contacts: Contatos
+    partners: Parceiros
+    faq:  FAQ
+    privacy_policy: Política de privacidade
+    company-rules: regras da empresa
+    homepage: Homepage
+    investors: Investidores
+    about: Sobre
+    guarantees: Garantias
   text:
-    silder_bottom:
-    super_promotion:
-    technologies:
-    faq:
-    wind_turbines:
-    vertical_and_horizontal:
-    sun_and_powerwall:
-    single_and_cascades_batteries:
-    invest_plan:
-    at:
-    income_percent:
-    clients:
+    silder_bottom: O uso de tecnologias de energia alternativa já passou os quadros de soluções de compromisso na área de geração de eletricidade. Basta dizer que a quantidade de eletricidade produzida pelas turbinas eólicas em 2016 no mundo, excedeu a quantidade de eletricidade produzida por estações atômicas no mesmo período em todo o mundo.
+    super_promotion: Primeira promoção super no Ano Novo!
+    technologies: Tecnologias
+    faq: Faq
+    wind_turbines: Turbinas eólicas
+    vertical_and_horizontal: Vertical e horizontal
+    sun_and_powerwall: Sun e PowerWall
+    single_and_cascades_batteries: Pilhas simples e cascatas
+    invest_plan: Um único plano de investimento
+    at: Às
+    income_percent: Porcentagem de lucro
+    clients: Clientes
   investment:
-    percent:
-    period:
-    accruals:
-    minima_deposite:
-    minimum_conclusion:
-    close_deposit:
-    contract_offer:
+    percent: Percentagem
+    period: Período
+    accruals: Acréscimos
+    minima_deposite: Depósito mínimo
+    minimum_conclusion: Conclusão mínima
+    close_deposit: Fechamento prematuro do depósito
+    contract_offer: Contrato-oferta
 # ---------------------------------------
   activerecord:
     errors:

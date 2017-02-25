@@ -1,44 +1,44 @@
 ---
 it:
   btn:
-    sign_in_up:
-    start_to_invest:
-    all_promotions:
-    full_about:
-    invest:
+    sign_in_up: Entra / Iscriviti
+    start_to_invest: Iniziare a investire in energia elettrica
+    all_promotions: Vedi tutte le promozioni
+    full_about: Leggi tutto l'articolo
+    invest: investire
   nav:
-    about_company:
-    news:
-    contacts:
-    partners:
-    faq: 
-    privacy_policy:
-    company-rules:
-    homepage:
-    investors:
-    about:
-    guarantees:
+    about_company: A proposito di società
+    news: Notizie
+    contacts: Contatti
+    partners: Partner
+    faq:  FAQ
+    privacy_policy: Informazioni sulla privacy
+    company-rules: Regole Azienda
+    homepage: Homepage
+    investors: Gli investitori
+    about: A proposito di
+    guarantees: Garanzie
   text:
-    silder_bottom:
-    super_promotion:
-    technologies:
-    faq:
-    wind_turbines:
-    vertical_and_horizontal:
-    sun_and_powerwall:
-    single_and_cascades_batteries:
-    invest_plan:
-    at:
-    income_percent:
-    clients:
+    silder_bottom: Utilizzo di tecnologie energetiche alternative già superato i fotogrammi di soluzioni di compromesso nel campo della generazione di energia elettrica. E 'sufficiente dire che quantità di elettricità prodotta dalle turbine eoliche nel 2016 in tutto il mondo, ha superato quantità di energia elettrica prodotta da centrali atomiche nello stesso arco di tempo in tutto il mondo.
+    super_promotion: primo super promozione nel nuovo anno!
+    technologies: Tecnologie
+    faq: Faq
+    wind_turbines: Turbine eoliche
+    vertical_and_horizontal: verticale e orizzontale
+    sun_and_powerwall: Sun e Powerwall
+    single_and_cascades_batteries: batterie singole e cascate
+    invest_plan: un unico piano di investimenti
+    at: a
+    income_percent: Percentuale di profitto
+    clients: clienti
   investment:
-    percent:
-    period:
-    accruals:
-    minima_deposite:
-    minimum_conclusion:
-    close_deposit:
-    contract_offer:
+    percent: Percentuale
+    period: Periodo
+    accruals: Accantonamenti
+    minima_deposite: Deposito minimo
+    minimum_conclusion: conclusione minima
+    close_deposit: chiusura prematura del deposito
+    contract_offer: Contratto-offerta
 # ---------------------------------------
   activerecord:
     errors:

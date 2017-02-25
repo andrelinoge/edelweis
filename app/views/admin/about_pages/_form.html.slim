@@ -11,6 +11,12 @@
       = f.file_field :image
       = f.hidden_field :image_cache 
 
+      br
+      label
+        |Remove image
+        |&nbsp;&nbsp;
+        = f.check_box :remove_image
+
   .form-actions
     = link_to 'Cancel', admin_about_pages_path, class: 'btn btn-default'
     |&nbsp;&nbsp;&nbsp;

@@ -1,43 +1,43 @@
 de:
   btn:
-    sign_in_up:
-    start_to_invest:
-    all_promotions:
-    full_about:
-    invest:
+    sign_in_up: Anmelden / Registrieren
+    start_to_invest: Start in Strom investieren
+    all_promotions: Alle Promotions ansehen
+    full_about: Lesen Sie die ganze Geschichte
+    invest: investieren
   nav:
-    about_company:
-    news:
-    contacts:
-    partners:
-    faq: 
-    privacy_policy:
-    company-rules:
-    homepage:
-    investors:
-    about:
-    guarantees:
+    about_company: Über die Firma
+    news: Nachrichten
+    contacts: Kontakte
+    partners: Partner
+    faq: FAQ
+    privacy_policy: Datenschutzerklärung
+    company-rules: Unternehmensregeln
+    homepage: Homepage
+    investors: Investoren
+    about: über
+    guarantees: Garantien
   text:
-    silder_bottom:
-    super_promotion:
-    technologies:
-    faq:
-    wind_turbines:
-    vertical_and_horizontal:
-    sun_and_powerwall:
-    single_and_cascades_batteries:
-    invest_plan:
-    at:
-    income_percent:
-    clients:
+    silder_bottom: Der Einsatz alternativer Energietechnologien hat bereits die Frames von Kompromisslösungen im Bereich der Stromerzeugung bestanden. Es genügt zu sagen, dass die von den Windenergieanlagen im Jahr 2016 in der Welt erzeugte Elektrizitätsmenge die von den Atomstationen erzeugte Strommenge im gleichen Zeitrahmen um die Welt überstieg.
+    super_promotion: Erste Super-Promotion im neuen Jahr!
+    technologies: Technologien
+    faq: Faq
+    wind_turbines: Windkraftanlagen
+    vertical_and_horizontal: Vertikal und horizontal
+    sun_and_powerwall: Sonne und PowerWall
+    single_and_cascades_batteries: Einzel- und Kaskadenbatterien
+    invest_plan: Ein einzelner Investitionsplan
+    at: at
+    income_percent: Gewinnanteil
+    clients: Kunden
   investment:
-    percent:
-    period:
-    accruals:
-    minima_deposite:
-    minimum_conclusion:
-    close_deposit:
-    contract_offer:
+    percent: Prozent
+    period: Zeitraum
+    accruals: Rückstellungen
+    minima_deposite: Mindesteinzahlung
+    minimum_conclusion: Mindestabschluss
+    close_deposit: Vorzeitige Schließung der Einzahlung
+    contract_offer: Vertragsangebot
 # ---------------------------------------
   activerecord:
     errors:
