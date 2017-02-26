@@ -38,6 +38,14 @@ de:
     minimum_conclusion: Mindestabschluss
     close_deposit: Vorzeitige Schließung der Einzahlung
     contract_offer: Vertragsangebot
+    plan:
+      line_1: Unter dem Prozentsatz des Gewinns für den aktuellen Tag, von 0,5% bis 3%
+      line_2: 365 Tage
+      line_3: Täglich
+      line_4: Nicht vorgesehen
+      line_5: Nach der Errichtung einer Anzahlung und Bestätigung der Daten
+      line_6: X 1% x 365 Tage
+      invest: investieren
 # ---------------------------------------
   activerecord:
     errors:

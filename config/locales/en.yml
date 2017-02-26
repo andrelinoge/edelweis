@@ -39,6 +39,14 @@ en:
     minimum_conclusion: Minimum conclusion
     close_deposit: Premature closure of deposit
     contract_offer: Contract-offer
+    plan:
+      line_1: Under the percentage of profit for the current day, from 0.5% to 3%
+      line_2: 365 days
+      line_3: Daily
+      line_4: not provided
+      line_5: after the establishment of a deposit and confirmation of data
+      line_6: x 1% x 365 days
+      invest: invest
 
 # ---------------------------------------
   activerecord:

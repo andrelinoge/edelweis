@@ -39,6 +39,14 @@ tr:
     minimum_conclusion: Minimum sonuç
     close_deposit: Mevduatın erken kapanması
     contract_offer: Sözleşme teklifi
+    plan:
+      line_1: Mevcut gündeki kâr yüzdesi olarak,% 0,5'ten% 3'e,
+      line_2: 365 gün
+      line_3: Günlük
+      line_4: Sağlanmadı
+      line_5: Bir depozitonun kurulması ve verilerin onaylanmasından sonra
+      line_6: X 1% x 365 gün
+      invest: Yatırım yapmak
 # ---------------------------------------    
   activerecord:
     errors:

@@ -119,13 +119,13 @@
           h3 =t('text.invest_plan')
           p 
             = "#{t('investment.percent')}:"
-            span Под процент прибыли на текущий день от 0.5% до 3%
+            span = "#{t('investment.plan.line_1')}" 
           p
             = "#{t('investment.period')}:"
-            span 365 дней
+            span = "#{t('investment.plan.line_2')}" 
           p
             = "#{t('investment.accruals')}:"
-            span Ежедневно
+            span = "#{t('investment.plan.line_3')}" 
           p
             = "#{t('investment.minima_deposite')}:"
             span 50 USD
@@ -134,10 +134,10 @@
             span 0.2 USD
           p
             = "#{t('investment.close_deposit')}:"
-            span не предусмотрено
+            span = "#{t('investment.plan.line_4')}" 
           p
             = "#{t('investment.contract_offer')}:"
-            span после создания депозита и подтверждения данных
+            span = "#{t('investment.plan.line_5')}" 
 
           .text == strip_tags(@investment_block.content)
           .graph
@@ -149,9 +149,9 @@
           .graph-block
             .per = "#{Setting[:profit_percent]} %"
 
-          span Инвестируете:
+          span = "#{t('investment.plan.invest')}:"
           input[id="calc_input", value="50.00"] 
-          span.rate x 1% x 365 дней
+          span.rate = "#{t('investment.plan.line_6')}" 
           span.profit
             | =&nbsp;
             b[id="profit_result"] 156.75 

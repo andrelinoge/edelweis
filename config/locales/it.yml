@@ -39,6 +39,14 @@ it:
     minimum_conclusion: conclusione minima
     close_deposit: chiusura prematura del deposito
     contract_offer: Contratto-offerta
+    plan:
+      line_1: Sotto la percentuale di profitto per il giorno corrente, dal 0,5% al 3%
+      line_2: 365 giorni
+      line_3: Quotidiano
+      line_4: non fornito
+      line_5: dopo la costituzione di un deposito e la conferma dei dati
+      line_6: x 1% x 365 giorni
+      invest: investire
 # ---------------------------------------
   activerecord:
     errors:
