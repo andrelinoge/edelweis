@@ -20,7 +20,7 @@ tr:
     guarantees: Teminatlar
   text:
     silder_bottom: Alternatif enerji teknolojilerinin kullanımı zaten elektrik üretme alanında uzlaşma çözümleri çerçevesini geçti. Dünya'da 2016'da rüzgar türbinleri tarafından üretilen elektrik miktarının, aynı zaman aralığında atom istasyonları tarafından üretilen elektrik miktarını aştığını söylemek yeterlidir.
-    super_promotion: Yılbaşında ilk süper promosyon!
+    super_promotion: Biz değerli ödüller çizim için harekete uzatmak!!!
     technologies: Teknolojiler
     faq: Faq
     wind_turbines: Rüzgar türbini
@@ -47,7 +47,7 @@ tr:
       line_5: Bir depozitonun kurulması ve verilerin onaylanmasından sonra
       line_6: X 1% x 365 gün
       invest: Yatırım yapmak
-# ---------------------------------------    
+# ---------------------------------------
   activerecord:
     errors:
       messages:
